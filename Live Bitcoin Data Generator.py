@@ -4,7 +4,6 @@
 import csv
 import time
 import requests
-import fontstyle
 
 from datetime import datetime
 
@@ -23,9 +22,9 @@ def get_price(coin, currency):
         
     except requests.ConnectionError:
         
-        error_statement = fontstyle.apply(" Problem Getting To The Link. Make sure you are connected to the internet.", "yellow")
+        error_statement = "Error: Problem Getting To The Link. Make sure you are connected to the internet.)
         
-        print(fontstyle.apply('Error:', 'bold/red/underline') + error_statement)
+        print(error_statement)
 
 
 # Using the data to creat a CSV file :
