@@ -9,7 +9,7 @@ import fontstyle
 from datetime import datetime
 
 
-# Getting data from Crypto Compare :
+# Getting data from 'Crypto Compare' :
 
 url = 'https://min-api.cryptocompare.com/data/price?fsym={}&tsyms={}'
 
@@ -64,6 +64,3 @@ while True:
          
         except (TypeError, NameError): 
          break
-        
-
-''' Created By Sourin Das '''
